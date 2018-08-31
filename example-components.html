@@ -1,0 +1,283 @@
+---
+layout: default
+title: Example Components
+description: More Example Components
+---
+<div class="toolbar toolbar--material">
+  <div id="open-toolbar" class="toolbar__left toolbar--material__left">
+    <span class="toolbar-button toolbar-button--material">
+      <i class="zmdi zmdi-menu"></i>
+    </span>
+  </div>
+  <div class="toolbar__center toolbar--material__center">
+    {{ page.title }}
+  </div>
+  <div class="toolbar__right toolbar--material__right">
+    <span class="toolbar-button toolbar-button--material">
+      <i class="zmdi zmdi-search"></i>
+    </span>
+    <span class="toolbar-button toolbar-button--material">
+      <i class="zmdi zmdi-favorite"></i>
+    </span>
+    <span class="toolbar-button toolbar-button--material">
+      <i class="zmdi zmdi-more-vert"></i>
+    </span>
+  </div>
+</div>
+<div class="splitter-collapse">
+  <nav class="menu">
+    <ul class="list list--material">
+      <a href="./">
+        <li class="list-item list-item--material">
+          <div class="list-item__center list-item--material__center">
+            <div class="list-item__title list-item--material__title">Home</div>
+          </div>
+        </li>
+      </a>
+      <a href="cats.html">
+        <li class="list-item list-item--material">
+          <div class="list-item__center list-item--material__center">
+            <div class="list-item__title list-item--material__title">Cats</div>
+          </div>
+        </li>
+      </a>
+      <a href="example-components.html">
+        <li class="list-item list-item--material">
+          <div class="list-item__center list-item--material__center">
+            <div class="list-item__title list-item--material__title">More Example Components</div>
+          </div>
+        </li>
+      </a>
+    </ul>
+  </nav>
+</div>
+<div class="page__content page--material__content" style="padding: 10px;">
+  <br>
+  <h4>Switch</h4>
+  <br>
+  <label class="switch switch--material">
+    <input type="checkbox" class="switch__input switch--material__input">
+    <div class="switch__toggle switch--material__toggle">
+      <div class="switch__handle switch--material__handle">
+      </div>
+    </div>
+  </label>
+  <label class="switch switch--material">
+    <input type="checkbox" class="switch__input switch--material__input" checked>
+    <div class="switch__toggle switch--material__toggle">
+      <div class="switch__handle switch--material__handle">
+      </div>
+    </div>
+  </label>
+  <label class="switch switch--material">
+    <input type="checkbox" class="switch__input switch--material__input" disabled>
+    <div class="switch__toggle switch--material__toggle">
+      <div class="switch__handle switch--material__handle">
+      </div>
+    </div>
+  </label>
+  <br>
+  <h4>Segment</h4>
+  <br>
+  <div class="segment segment--material" style="width: 280px; margin: 0 auto;">
+    <div class="segment__item segment--material__item">
+      <input type="radio" class="segment__input segment--material__input" name="segment-b" checked>
+      <div class="segment__button segment--material__button">One</div>
+    </div>
+    <div class="segment__item segment--material__item">
+      <input type="radio" class="segment__input segment--material__input" name="segment-b">
+      <div class="segment__button segment--material__button">Two</div>
+    </div>
+    <div class="segment__item segment--material__item">
+      <input type="radio" class="segment__input segment--material__input" name="segment-b">
+      <div class="segment__button segment--material__button">Three</div>
+    </div>
+  </div>
+  <br>
+  <h4>Buttons</h4>
+  <br>
+  <button class="button button--material">BUTTON</button>
+  <button class="button button--material" disabled>DISABLED</button>
+  <br>
+  <h4>Tabbar</h4>
+  <div style="position: relative; height: 400px">
+    <div class="tabbar tabbar--top tabbar--material">
+      <label class="tabbar__item tabbar--material__item">
+        <input type="radio" name="tabbar-material-c" checked="checked">
+        <button class="tabbar__button tabbar--material__button">
+          <i class="tabbar__icon tabbar--material__icon zmdi zmdi-phone"></i>
+          <div class="tabbar__label tabbar--material__label">Call</div>
+        </button>
+      </label>
+
+      <label class="tabbar__item tabbar--material__item">
+        <input type="radio" name="tabbar-material-c">
+        <button class="tabbar__button tabbar--material__button">
+          <i class="tabbar__icon tabbar--material__icon zmdi zmdi-favorite"></i>
+          <div class="tabbar__label tabbar--material__label">Favorites</div>
+        </button>
+      </label>
+
+      <label class="tabbar__item tabbar--material__item">
+        <input type="radio" name="tabbar-material-c">
+        <button class="tabbar__button tabbar--material__button">
+          <i class="tabbar__icon tabbar--material__icon zmdi zmdi-delete"></i>
+          <div class="tabbar__label tabbar--material__label">Delete</div>
+        </button>
+      </label>
+    </div>
+    <br>
+    <h4>Range</h4>
+    <div class="range range--material">
+      <input type="range" class="range__input range--material__input" min="0" max="100">
+      <!-- <input type="range" class="range__focus-ring range--material__focus-ring"> -->
+    </div>
+
+    <div class="range range--material range--disabled">
+      <input type="range" class="range__input range--material__input" disabled>
+      <!-- <input type="range" class="range__focus-ring range--material__focus-ring" disabled> -->
+    </div>
+    <br>
+    <h4>Notification</h4>
+    <br>
+    <span class="notification">1</span>
+    <span class="notification">10</span>
+    <span class="notification">999</span>
+    <br>
+    <h4>Search</h4>
+    <input type="search" value="" placeholder="Search" class="search-input search-input--material" style="width: 280px;">
+    <br>
+    <h4>Text Inputs</h4>
+    <br>
+    <span>
+      <div>
+        <input class="text-input text-input--material" placeholder="Username" type="text" required>
+      </div>
+      <br />
+      <div>
+        <input class="text-input text-input--material" placeholder="Password" type="password" required>
+      </div>
+    </span>
+    <br>
+    <h4>Textarea</h4>
+    <br>
+    <textarea class="textarea" rows="3" placeholder="Textarea"></textarea>
+    <br>
+    <h4>Dialog</h4>
+    <br>
+    <div style="position: relative; height: 400px">
+      <div class="dialog-mask dialog-mask--material"></div>
+      <div class="dialog dialog--material">
+        <div class="dialog dialog-container--material">
+          <p style="margin-left:24px;margin-right:24px">The quick brown fox jumps over the lazy dog.</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div style="position: relative; height: 400px">
+      <div class="alert-dialog-mask alert-dialog-mask--material"></div>
+      <div class="alert-dialog alert-dialog--material">
+        <div class="alert-dialog-container alert-dialog-container--material">
+          <div class="alert-dialog-title alert-dialog-title--material">
+            Dialog title
+          </div>
+          <div class="alert-dialog-content alert-dialog-content--material">
+            Some dialog content.
+          </div>
+          <div class="alert-dialog-footer alert-dialog-footer--material">
+            <button class="alert-dialog-button alert-dialog-button--material">OK</button>
+            <button class="alert-dialog-button alert-dialog-button--material">CANCEL</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="progress-bar progress-bar--material">
+      <div class="progress-bar__primary progress-bar--material__primary" style="width: 30%"></div>
+    </div>
+    <br />
+    <div class="progress-bar progress-bar--material">
+      <div class="progress-bar__primary progress-bar--material__primary" style="width:20%"></div>
+      <div class="progress-bar__secondary progress-bar--material__secondary" style="width:76%"></div>
+    </div>
+    <br />
+    <div class="progress-bar progress-bar--material progress-bar--indeterminate">
+    </div>
+
+    <svg class="progress-circular progress-circular--material progress-circular--indeterminate">
+      <circle class="progress-circular__background progress-circular--material__background" />
+      <circle class="progress-circular__primary progress-circular--material__primary progress-circular--indeterminate__primary"
+      />
+      <circle class="progress-circular__secondary progress-circular--material__secondary progress-circular--indeterminate__secondary"
+      />
+    </svg>
+
+    <svg class="progress-circular progress-circular--material">
+      <circle class="progress-circular__background progress-circular--material__background" />
+      <circle class="progress-circular__secondary progress-circular--material__secondary" style="stroke-dasharray: 140%, 251.32%"
+      />
+      <circle class="progress-circular__primary progress-circular--material__primary" style="stroke-dasharray: 100%, 251.32%" />
+    </svg>
+
+    <svg class="progress-circular progress-circular--material">
+      <circle class="progress-circular__background progress-circular--material__background" />
+      <circle class="progress-circular__primary progress-circular--material__primary" style="stroke-dasharray: 80%, 251.32%" />
+    </svg>
+    <br>
+
+    <button class="fab fab--material">
+      <i class="zmdi zmdi-car"></i>
+    </button>
+    <button class="fab fab--material" disabled>
+      <i class="zmdi zmdi-car"></i>
+    </button>
+    <br>
+    <br>
+    <button class="fab fab--material fab--mini">
+      <i class="zmdi zmdi-plus"></i>
+    </button>
+    <button class="fab fab--material fab--mini" disabled>
+      <i class="zmdi zmdi-plus"></i>
+    </button>
+    <br>
+    <select class="select-input select-input--material">
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+    </select>
+
+    &nbsp;
+    <br>
+    <select class="select-input select-input--material" disabled>
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+    </select>
+    <br>
+    <div style="position: relative; height: 400px">
+      <div class="action-sheet-mask action-sheet-mask--material"></div>
+      <div class="action-sheet action-sheet--material">
+        <div class="action-sheet-title action-sheet-title--material">Title</div>
+        <button class="action-sheet-button action-sheet-button--material">
+          <i class="ion-android-checkbox-blank action-sheet-icon--material"></i>Label</button>
+        <button class="action-sheet-button action-sheet-button--material">
+          <i class="ion-android-close action-sheet-icon--material"></i>Cancel</button>
+      </div>
+    </div>
+
+    <div style="height: 200px; padding: 1px 0 0 0;">
+      <div class="card card--material">
+        <div class="card__title card--material__title">Card Title</div>
+        <div class="card__content card--material__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast toast--material">
+    <div class="toast__message toast--material__message">Message Message Message Message Message Message</div>
+    <button class="toast__button toast--material__button">ACTION</button>
+  </div>
+</div>

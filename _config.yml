@@ -1,0 +1,10 @@
+title: PWA Template
+description: A Pure HTML5 PWA Template
+author: Sem Postma
+ms_tile_color: '#9f00a7'
+theme_color: '#f5593d'
+logo: assets/images/logo.png
+background_color: '#f5593d'
+url: https://example.com
+plugsin:
+  - jekyll-sitemap

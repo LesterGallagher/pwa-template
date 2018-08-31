@@ -1,0 +1,60 @@
+---
+layout: default
+title: Home
+description: Home Page of PWA Template
+---
+<div class="toolbar toolbar--material">
+  <div id="open-toolbar" class="toolbar__left toolbar--material__left">
+    <span class="toolbar-button toolbar-button--material">
+      <i class="zmdi zmdi-menu"></i>
+    </span>
+  </div>
+  <div class="toolbar__center toolbar--material__center">
+    {{ page.title }}
+  </div>
+  <div class="toolbar__right toolbar--material__right">
+    <span class="toolbar-button toolbar-button--material">
+      <i class="zmdi zmdi-search"></i>
+    </span>
+    <span class="toolbar-button toolbar-button--material">
+      <i class="zmdi zmdi-favorite"></i>
+    </span>
+    <span class="toolbar-button toolbar-button--material">
+      <i class="zmdi zmdi-more-vert"></i>
+    </span>
+  </div>
+</div>
+<div class="splitter-collapse">
+  <nav class="menu">
+    <ul class="list list--material">
+      <a href="./">
+        <li class="list-item list-item--material">
+          <div class="list-item__center list-item--material__center">
+            <div class="list-item__title list-item--material__title">Home</div>
+          </div>
+        </li>
+      </a>
+      <a href="cats.html">
+        <li class="list-item list-item--material">
+          <div class="list-item__center list-item--material__center">
+            <div class="list-item__title list-item--material__title">Cats</div>
+          </div>
+        </li>
+      </a>
+      <a href="example-components.html">
+        <li class="list-item list-item--material">
+          <div class="list-item__center list-item--material__center">
+            <div class="list-item__title list-item--material__title">More Example Components</div>
+          </div>
+        </li>
+      </a>
+    </ul>
+  </nav>
+</div>
+<div class="page__content page--material__content">
+  <div class="card card--material">
+    <div class="card__title card--material__title">{{ site.title }}</div>
+    <div class="card__content card--material__content">
+      <img height="200" src="{{ site.logo }}" alt="logo"> {{ site.description }}</div>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+.splitter-collapse nav.menu {
+  width: 220px;
+  transition: all 0.3s cubic-bezier(0.1, 0.7, 0.1, 1) 0s;
+  z-index: 5;
+  left: auto;
+  right: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  background: #eee;
+}
+
+.splitter-collapse {
+  z-index: 5;
+  transition: all 0.3s cubic-bezier(0.1, 0.7, 0.1, 1) 0s;
+}
+
+.splitter-collapse.open {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.splitter-collapse.open nav.menu {
+  transform: translate3d(100%, 0px, 0px);
+}
+
+.splitter a {
+  display: block;
+}
+
+.back-button {
+  display: inline-block;
+}
+
+.page__content {
+  -ms-touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+  z-index: 0;
+  position: absolute;
+  top: 56px;
+  bottom: 0;
+}
+
+.toast {
+  position: fixed;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+  cursor: unset;
+}

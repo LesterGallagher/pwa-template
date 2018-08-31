@@ -1,0 +1,108 @@
+---
+layout: default
+title: Cat Detail
+description: More info on cats
+---
+<div class="toolbar toolbar--material">
+  <div class="toolbar__left toolbar--material__left">
+    <div class="back-button--material back-button">
+      <span class="back-button__icon back-button--material__icon">
+        <i class="zmdi zmdi-arrow-left"></i>
+      </span>
+    </div>
+  </div>
+  <div class="toolbar__center toolbar--material__center">
+    {{ page.title }}
+  </div>
+  <div class="toolbar__right toolbar--material__right">
+    <span class="toolbar-button toolbar-button--material">
+      <i class="zmdi zmdi-search"></i>
+    </span>
+    <span class="toolbar-button toolbar-button--material">
+      <i class="zmdi zmdi-favorite"></i>
+    </span>
+    <span class="toolbar-button toolbar-button--material">
+      <i class="zmdi zmdi-more-vert"></i>
+    </span>
+  </div>
+</div>
+<div class="page__content page--material__content">
+  <ul class="list list--material">
+    <li class="list-item list-item--material">
+      <div class="list-item__center list-item--material__center">
+        <div class="list-item__title list-item--material__title">
+          <img height="210" src="https://api.thecatapi.com/v1/images/search?format=src&mime_types=image/gif">
+        </div>
+        <div class="list-item__subtitle list-item--material__subtitle">Very friendly cat</div>
+      </div>
+    </li>
+    <li class="list-header list-header--material">
+      Checkboxes
+    </li>
+    <li class="list-item list-item--material">
+      <div class="list-item__left list-item--material__left">
+        <label class="checkbox checkbox--material">
+          <input type="checkbox" id="checkbox3" class="checkbox__input checkbox--material__input">
+          <div class="checkbox__checkmark checkbox--material__checkmark"></div>
+        </label>
+      </div>
+
+      <label for="checkbox3" class="list-item__center list-item--material__center">
+        <div class="list-item__title list-item--material__title">Notifications</div>
+        <div class="list-item__subtitle list-item--material__subtitle">Allow notifications</div>
+      </label>
+    </li>
+
+    <li class="list-item list-item--material">
+      <div class="list-item__left list-item--material__left">
+        <label class="checkbox checkbox--material">
+          <input type="checkbox" id="checkbox4" class="checkbox__input checkbox--material__input" checked="checked">
+          <div class="checkbox__checkmark checkbox--material__checkmark"></div>
+        </label>
+      </div>
+
+      <label for="checkbox4" class="list-item__center list-item--material__center">
+        <div class="list-item__title list-item--material__title">Sound</div>
+        <div class="list-item__subtitle list-item--material__subtitle">Hangouts message</div>
+      </label>
+    </li>
+    <li class="list-header list-header--material">
+      Inputs
+    </li>
+    <li class="list-item list-item--material">
+      <div class="list-item__center list-item--material__center">
+        <input type="text" class="text-input" placeholder="Name">
+      </div>
+    </li>
+    <li class="list-item list-item--material">
+      <div class="list-item__center list-item--material__center">
+        <input type="text" class="text-input" placeholder="Email">
+      </div>
+    </li>
+    <li class="list-header list-header--material">
+      Text
+    </li>
+    <li class="list-item list-item--material">
+      <div class="list-item__center list-item--material__center">
+        <div class="list-item__title list-item--material__title">Orange</div>
+        <div class="list-item__subtitle list-item--material__subtitle">Sweet fruit that grows on trees.</div>
+      </div>
+    </li>
+    <li class="list-item list-item--material">
+      <div class="list-item__center list-item--material__center">
+        <div class="list-item__title list-item--material__title">Pear</div>
+        <div class="list-item__subtitle list-item--material__subtitle">Funny-shaped fruit.</div>
+      </div>
+    </li>
+    <li class="list-header list-header--material">
+      Chevron
+    </li>
+    <li class="list-item list-item--chevron">
+      <div class="list-item__center">Item B</div>
+      <div class="list-item__right list-item--chevron__right">
+        <div class="list-item__label">Chevron Label</div>
+      </div>
+    </li>
+
+  </ul>
+</div>
